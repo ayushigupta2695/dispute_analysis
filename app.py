@@ -29,9 +29,6 @@ from dispute.ui import render_dispute_ui
 # -------------------------------------------------
 load_dotenv()
 
-assert os.getenv("GROQ_API_KEY"), "GROQ_API_KEY missing"
-assert os.getenv("LANGSMITH_API_KEY"), "LANGSMITH_API_KEY missing"
-
 # -------------------------------------------------
 # Init (UNCHANGED)
 # -------------------------------------------------
@@ -191,3 +188,4 @@ tab_dispute_analysis = st.tabs(
 # =================================================
 with tab_dispute_analysis:
     render_dispute_ui()
+
